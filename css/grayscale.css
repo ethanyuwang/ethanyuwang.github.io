@@ -144,6 +144,7 @@ a {
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
+  position: center;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -170,17 +171,10 @@ a {
   height: 20px;
   font-size: 20px;
   text-align: center;
-  top: 50%;
-  margin-top: -12px;
+  top: 30%;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
+
 #portfolio * {
   z-index: 2;
 }
@@ -292,9 +286,12 @@ a {
 }
 .timeline .timeline-heading h5 {
   margin-top: 0;
+  margin-bottom: 18px;
   color: rgba(66, 220, 163, 0.9);
 }
 .timeline .timeline-heading h4.subheading {
+  margin-top: 18px;
+  margin-bottom: 18px;
   text-transform: none;
   color: rgba(255, 255, 255, 0.9);
 }
