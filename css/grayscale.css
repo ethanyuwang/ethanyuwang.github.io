@@ -120,22 +120,68 @@ a {
         font-size: 22px; } }
 
 .btn-circle {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   margin-top: 15px;
-  padding: 7px 0;
-  border: 2px solid white;
+  padding: 7px 16px;
+  border: 2px solid #42dca3;
   border-radius: 100% !important;
-  font-size: 26px;
-  color: white;
+  font-size: 40px;
+  color: #42dca3;
   background: transparent;
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out; }
-  .btn-circle:hover, .btn-circle:focus {
-    outline: none;
-    color: white;
-    background: rgba(255, 255, 255, 0.1); }
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
 .content-section {
   padding-top: 100px; }
@@ -192,7 +238,7 @@ a {
   -o-background-size: cover; }
   .about-section .about-text {
     font-size: 18px;
-      color: black;}
+    color: black;}
 
 .service-heading {
   margin: 15px 0;
@@ -447,3 +493,192 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+
+ /* cARe page */
+
+.cARehead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url(../img/cARe/intro-bg.jpg) no-repeat top center scroll;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .cARehead .intro-body {
+    display: table-cell;
+    vertical-align: middle; }
+    .cARehead .intro-body .brand-heading {
+      font-size: 40px;
+      color: rgba(0, 0, 0, 0.7); }
+    .cARehead .intro-body .intro-text {
+      font-size: 18px; }
+  @media (min-width: 768px) {
+    .cARehead {
+      height: 100%;
+      padding: 0; }
+      .cARehead .intro-body .brand-heading {
+        font-size: 100px; }
+      .cARehead .intro-body .intro-text {
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.7); } }
+
+.cAReabout-section {
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .cAReabout-section .about-text {
+    font-size: 18px;
+    color: black;}
+    /* color: rgb(17, 18, 19) */
+
+/* Spotlight */
+
+  .spotlight {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+  }
+
+    .spotlight .image {
+      -moz-order: 1;
+      -webkit-order: 1;
+      -ms-order: 1;
+      order: 1;
+      border-radius: 0;
+      width: 50%;
+    }
+
+      .spotlight .image img {
+        border-radius: 0;
+        width: 100%;
+      }
+
+    .spotlight .content {
+      padding: 2em 4em 0.1em 4em ;
+      -moz-order: 2;
+      -webkit-order: 2;
+      -ms-order: 2;
+      order: 2;
+      max-width: 48em;
+      width: 50%;
+    }
+
+    .spotlight:nth-child(2n) {
+      -moz-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+
+    .spotlight:nth-child(1) {
+      background-color: rgba(20, 20, 20, 0.9);
+    }
+
+    .spotlight:nth-child(2) {
+      background-color: rgba(15, 15, 15, 0.9);
+    }
+
+    .spotlight:nth-child(3) {
+      background-color: rgba(20, 20, 20, 0.9);
+    }
+
+    .spotlight:nth-child(4) {
+      background-color: rgba(15, 15, 15, 0.9);
+    }
+
+    .spotlight:nth-child(5) {
+      background-color: rgba(20, 20, 20, 0.9);
+    }
+
+    .spotlight:nth-child(6) {
+      background-color: rgba(15, 15, 15, 0.9);
+    }
+
+    .spotlight:nth-child(7) {
+      background-color: rgba(20, 20, 20, 0.9);
+    }
+
+    .spotlight:nth-child(8) {
+      background-color: rgba(15, 15, 15, 0.9);
+    }
+
+    .spotlight:nth-child(9) {
+      background-color: rgba(20, 20, 20, 0.9);
+    }
+
+    .spotlight:nth-child(10) {
+      background-color: rgba(15, 15, 15, 0.9);
+    }
+
+    @media screen and (max-width: 1280px) {
+
+      .spotlight .image {
+        width: 45%;
+      }
+
+      .spotlight .content {
+        width: 55%;
+      }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+      .spotlight {
+        display: block;
+      }
+
+        .spotlight br {
+          display: none;
+        }
+
+        .spotlight .image {
+          width: 100%;
+        }
+
+        .spotlight .content {
+          padding: 4em 3em 2em 3em ;
+          max-width: none;
+          text-align: center;
+          width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+      .spotlight .content {
+        padding: 3em 2em 1em 2em ;
+      }
+
+    }
+/* Image */
+
+  .image {
+    border-radius: 3px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+  }
+
+    .image img {
+      border-radius: 3px;
+      display: block;
+    }
+
