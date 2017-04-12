@@ -195,8 +195,7 @@ a {
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  /*max-width: 400px;*/
-  margin: 0 auto;
+ 
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(66, 220, 163, 0.9);
@@ -496,7 +495,7 @@ body {
 
  /* cARe page */
 
-.cARehead {
+.cARe-head {
   display: table;
   width: 100%;
   height: auto;
@@ -509,40 +508,28 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
-  .cARehead .intro-body {
+  .cARe-head .intro-body {
     display: table-cell;
     vertical-align: middle; }
-    .cARehead .intro-body .brand-heading {
+    .cARe-head .intro-body .brand-heading {
       font-size: 40px;
       color: rgba(0, 0, 0, 0.7); }
-    .cARehead .intro-body .intro-text {
+    .cARe-head .intro-body .intro-text {
       font-size: 18px; }
   @media (min-width: 768px) {
-    .cARehead {
+    .cARe-head {
       height: 100%;
       padding: 0; }
-      .cARehead .intro-body .brand-heading {
+      .cARe-head .intro-body .brand-heading {
         font-size: 100px; }
-      .cARehead .intro-body .intro-text {
+      .cARe-head .intro-body .intro-text {
         font-size: 22px;
         color: rgba(0, 0, 0, 0.7); } }
 
-.cAReabout-section {
-  width: 100%;
-  padding: 50px 0;
-  color: white;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
-  .cAReabout-section .about-text {
-    font-size: 18px;
-    color: black;}
-    /* color: rgb(17, 18, 19) */
+.cARe-features-section {
+  }
 
 /* Spotlight */
-
   .spotlight {
     -moz-align-items: center;
     -webkit-align-items: center;
@@ -551,17 +538,14 @@ body {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
-    display: flex;
-    
-  }
-
+    display: flex; }
     .spotlight .image {
       -moz-order: 1;
       -webkit-order: 1;
       -ms-order: 1;
       order: 1;
       border-radius: 0;
-      width: 50%;
+      width: 45%;
     }
 
       .spotlight .image img {
