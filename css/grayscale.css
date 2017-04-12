@@ -109,7 +109,7 @@ a {
     .masthead .intro-body .brand-heading {
       font-size: 40px; }
     .masthead .intro-body .intro-text {
-      font-size: 18px; }
+      font-size: 18px;}
   @media (min-width: 768px) {
     .masthead {
       height: 100%;
@@ -234,10 +234,11 @@ a {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  filter: white; }
   .about-section .about-text {
     font-size: 18px;
-    color: black;}
+    color: white;}
 
 .service-heading {
   margin: 15px 0;
@@ -515,7 +516,8 @@ body {
       font-size: 40px;
       color: rgba(0, 0, 0, 0.7); }
     .cARe-head .intro-body .intro-text {
-      font-size: 18px; }
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.95); }
   @media (min-width: 768px) {
     .cARe-head {
       height: 100%;
@@ -524,7 +526,7 @@ body {
         font-size: 100px; }
       .cARe-head .intro-body .intro-text {
         font-size: 22px;
-        color: rgba(0, 0, 0, 0.7); } }
+        color: rgba(0, 0, 0, 0.95); } }
 
 .cARe-features-section {
   }
