@@ -22,7 +22,6 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  text-transform: uppercase;
   font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px; }
@@ -98,8 +97,8 @@ a {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: rgba(245, 245, 245, 0.1);
+  background: url(../img/intro-bg.jpg) no-repeat center left scroll;
+  background-color: rgba(0, 0, 0, 0.1);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -149,7 +148,7 @@ a {
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  max-width: 400px;
+  /*max-width: 400px;*/
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -182,23 +181,6 @@ a {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
-#portfolio .portfolio-item .portfolio-caption {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: rgba(255,255,255,.5);
-  text-align: center;
-  padding: 25px;
-}
-#portfolio .portfolio-item .portfolio-caption h4 {
-  text-transform: none;
-  margin: 0;
-}
-#portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  margin: 0;
-}
 #portfolio * {
   z-index: 2;
 }
@@ -214,6 +196,10 @@ a {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+  .about-section .about-text {
+    font-size: 18px;
+      color: black;}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -230,7 +216,7 @@ a {
   position: absolute;
   content: "";
   width: 2px;
-  background-color: #f1f1f1;
+  background-color: #42DCA3;
   left: 40px;
   margin-left: -1.5px;
 }
@@ -273,10 +259,10 @@ a {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #42DCA3;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 100%;
-  border: 7px solid #f1f1f1;
+  border: 7px solid #42DCA3;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -304,16 +290,22 @@ a {
 .timeline > li:last-child {
   margin-bottom: 0;
 }
-.timeline .timeline-heading h4 {
+.timeline .timeline-heading h5 {
   margin-top: 0;
-  color: inherit;
+  color: rgba(66, 220, 163, 0.9);
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
+  color: rgba(255, 255, 255, 0.9);
 }
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
   margin-bottom: 0;
+}
+.timeline .timeline-body h5.subheading_2 {
+  text-transform: none;
+  margin-bottom: 0;
+  color: rgba(66, 220, 163, 0.9);
 }
 @media (min-width: 768px) {
   .timeline:before {
@@ -385,6 +377,10 @@ a {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
+}
+.text-muted {
+  color: white;
+  background-color: rgba(66, 220, 163, 0.3);
 }
 
 @media (min-width: 767px) {
