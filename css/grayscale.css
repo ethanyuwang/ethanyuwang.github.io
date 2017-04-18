@@ -529,6 +529,7 @@ body {
         color: rgba(0, 0, 0, 0.95); } }
 
 .cARe-features-section {
+  margin-bottom: 0;
   }
 
 /* Spotlight */
@@ -680,3 +681,13 @@ body {
   -o-background-size: cover;
   filter: white; }
 
+.slogan{
+  width:100%;
+  position:absolute;
+  text-align:center;
+  color:#fff;
+  z-index:2;
+  background:rgba(255,255,255,0.3);
+  font-weight:600;
+  padding:20px;
+}
