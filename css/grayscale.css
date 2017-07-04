@@ -541,7 +541,7 @@ body {
   }
 
 /* Spotlight */
-  .spotlight {
+  .cARe-features-section .spotlight {
     -moz-align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
@@ -550,7 +550,7 @@ body {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex; }
-    .spotlight .image {
+    .cARe-features-section .spotlight .image {
       -moz-order: 1;
       -webkit-order: 1;
       -ms-order: 1;
@@ -559,12 +559,12 @@ body {
       width: 45%;
     }
 
-      .spotlight .image img {
+      .cARe-features-section .spotlight .image img {
         border-radius: 0;
         width: 100%;
       }
 
-    .spotlight .content {
+    .cARe-features-section .spotlight .content {
       padding: 2em 4em 0.1em 4em ;
       -moz-order: 2;
       -webkit-order: 2;
@@ -574,95 +574,35 @@ body {
       width: 50%;
     }
 
-    .spotlight:nth-child(2n) {
+    .cARe-features-section .spotlight:nth-child(2n-1) {
       -moz-flex-direction: row-reverse;
       -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
     }
 
-    .spotlight:nth-child(1) {
+    .cARe-features-section .spotlight:nth-child(1) {
       background-color: rgba(20, 20, 20, 0.9);
     }
 
-    .spotlight:nth-child(2) {
+    .cARe-features-section .spotlight:nth-child(2) {
       background-color: rgba(15, 15, 15, 0.9);
     }
 
-    .spotlight:nth-child(3) {
+    .cARe-features-section .spotlight:nth-child(3) {
       background-color: rgba(20, 20, 20, 0.9);
     }
 
-    .spotlight:nth-child(4) {
+    .cARe-features-section .spotlight:nth-child(4) {
       background-color: rgba(15, 15, 15, 0.9);
     }
 
-    .spotlight:nth-child(5) {
+    .cARe-features-section .spotlight:nth-child(5) {
       background-color: rgba(20, 20, 20, 0.9);
     }
 
-    .spotlight:nth-child(6) {
-      background-color: rgba(15, 15, 15, 0.9);
-    }
 
-    .spotlight:nth-child(7) {
-      background-color: rgba(20, 20, 20, 0.9);
-    }
-
-    .spotlight:nth-child(8) {
-      background-color: rgba(15, 15, 15, 0.9);
-    }
-
-    .spotlight:nth-child(9) {
-      background-color: rgba(20, 20, 20, 0.9);
-    }
-
-    .spotlight:nth-child(10) {
-      background-color: rgba(15, 15, 15, 0.9);
-    }
-
-    @media screen and (max-width: 1280px) {
-
-      .spotlight .image {
-        width: 45%;
-      }
-
-      .spotlight .content {
-        width: 55%;
-      }
-
-    }
-
-    @media screen and (max-width: 980px) {
-
-      .spotlight {
-        display: block;
-      }
-
-        .spotlight br {
-          display: none;
-        }
-
-        .spotlight .image {
-          width: 100%;
-        }
-
-        .spotlight .content {
-          padding: 4em 3em 2em 3em ;
-          max-width: none;
-          text-align: center;
-          width: 100%;
-        }
-
-    }
-
-    @media screen and (max-width: 736px) {
-
-      .spotlight .content {
-        padding: 3em 2em 1em 2em ;
-      }
-
-    }
+  
 /* Image */
 
   .image {
@@ -689,6 +629,91 @@ body {
   -o-background-size: cover;
   filter: white; }
 
+.RestWant-head {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  background: url(../img/RestWant/restaurant_bg1.jpg) no-repeat bottom center scroll;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .RestWant-head .intro-body {
+    display: table-cell;
+    vertical-align: middle; }
+    .RestWant-head .intro-body .brand-heading {
+      font-size: 40px; }
+    .RestWant-head .intro-body .intro-text {
+      font-size: 18px; }
+  @media (min-width: 768px) {
+    .RestWant-head {
+      height: 100%;
+      padding: 0; }
+      .RestWant-head .intro-body .brand-heading {
+        font-size: 100px; }
+      .RestWant-head .intro-body .intro-text {
+        font-size: 22px;} }
+
+.RestWant-features-section {
+  }
+
+/* Spotlight */
+  .RestWant-features-section .spotlight {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex; }
+
+    .RestWant-features-section .spotlight:nth-child(2n-1) {
+      -moz-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+
+    .RestWant-features-section .spotlight:nth-child(1) {
+      background-color: rgba(20, 20, 20, 0.9);
+    }
+
+    .RestWant-features-section .spotlight:nth-child(2) {
+      background-color: rgba(15, 15, 15, 0.9);
+    }
+
+    .RestWant-features-section .spotlight:nth-child(3) {
+      background-color: rgba(20, 20, 20, 0.9);
+    }
+
+    .RestWant-features-section .spotlight:nth-child(4) {
+      background-color: rgba(15, 15, 15, 0.9);
+    }
+
+    .RestWant-features-section .spotlight:nth-child(5) {
+      background-color: rgba(20, 20, 20, 0.9);
+    }
+
+
+.RestWant-technology-section {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  background: url(../img/RestWant/bg4.jpeg) no-repeat center scroll;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+
 .slogan{
   width:100%;
   position:absolute;
@@ -712,3 +737,4 @@ body {
       margin: 20px auto 0; } }
   .service-box p {
     margin-bottom: 0; }
+
